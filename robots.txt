@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /slike
+
+Sitemap: https://damboslonce.github.io/KupovinaPasa/sitemap.xml

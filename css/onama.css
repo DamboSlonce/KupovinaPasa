@@ -31,3 +31,21 @@ ul{
   box-shadow: var(--bojaSenke) 0px 8px 24px;
   padding-top: 100px;
 }
+.MegaMeni{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.MegaMeni h2{
+  justify-self: center;
+}
+.MegaMeni h3{
+  justify-self: center;
+}
+.MegaMeni a{
+  justify-self: center;
+  text-decoration: none;
+}
+.MegaMeni h3:hover{
+  color:gray;
+}

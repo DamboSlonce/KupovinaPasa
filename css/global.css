@@ -12,6 +12,7 @@
     --bojaSenke : rgba(149, 157, 165, 0.2);
     --bojaPasDiv  : #EBF2F7;
     --bojaOkvira : #85898C;
+    --bojaTextSenke : #4F71B5;
 }
 .tamnaTema{
   --bojaNavigacije : #181919;
@@ -23,15 +24,18 @@
   --bojaSenke : rgba(86, 78, 70, 0.2);
   --bojaPasDiv  : #161616;
   --bojaOkvira : #080808;
+  --bojaTextSenke : #FFFFFF;
 }
 body{
   background-color: var(--bojaPozadine);
+  transition: background-color 0.2s;
 }
 .NavDiv{
   margin: 15px auto;
-  width: calc(100% - 60px);
+  width: calc(100dvw - 60px);
   height: 100px;
   background-color: var(--bojaNavigacije);
+  transition: background-color 0.2s;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -93,6 +97,7 @@ body{
   width: calc(100% - 60px);
   height: 150px;
   background-color: var(--bojaNavigacije);
+  transition: background-color 0.2s;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -157,6 +162,8 @@ body{
 }
 .KorisnickoIme h1{
   color: var(--bojaSlovaBitno);
+  border-bottom: none;
+  margin-bottom: 4px;
 }
 .KorisnickoIme h2{
   float: right;
@@ -172,4 +179,32 @@ body{
   color: var(--bojaSlova);
   font-size: 22px;
   text-align: center;
+  text-shadow: var(--bojaTextSenke) 1px 0 10px;
+}
+@media only screen and (max-width:764px){
+.TemaDiv{
+  width: 75px;
+  height: 75px;
+}
+.NavDiv{
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.NavLink{
+  margin: 0;
+}
+.NavDugme{
+  margin:0;
+}
+.NavLogo{
+  margin-top: 20px;
+}
+.FooterLogoContainer{
+  display: none;
+}
+.SocialContainer{
+  width:100%;
+}
 }

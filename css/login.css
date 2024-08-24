@@ -49,3 +49,10 @@
   width: 117px;
   height: 100px;
 }
+@media only screen and (max-width:764px){
+.LoginContainer{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+}

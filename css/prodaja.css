@@ -1,8 +1,9 @@
 .FormaContainer{
   margin: 50px auto;
-  width: calc(100% - 1300px);
+  width: 500px;
   height: 800px;
   background-color: var(--bojaNavigacije);
+  transition: background-color 0.2s;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -12,4 +13,18 @@
 }
 label{
   color:var(--bojaSlovaBitno);
+}
+@media only screen and (max-width:764px){
+.FormaContainer{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.TeloContainer{
+    width: calc(100% - 40px);
+}
+.NavLink{
+  margin: 0;
+  line-height: 18px;
+}
 }

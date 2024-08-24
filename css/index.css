@@ -6,7 +6,7 @@
 
 }
 
-@keyframes fading{
+@keyframes slikaAnimacija{
   0%{opacity:0.4}
   100%{opacity:1}
 }
@@ -17,8 +17,9 @@
   position: absolute;
   display: none;
   user-select: none;
-  animation: fading 1s;
+  animation: slikaAnimacija 1s;
   border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 .BanerKomande{
@@ -58,4 +59,10 @@ h2{
 ol, ul{
   margin-bottom: 16px;
   color: var(--bojaSlova);
+}
+@media only screen and (max-width:764px){
+.BanerContainer{
+  width: 70vw;
+  height: 40vw;
+}
 }

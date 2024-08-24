@@ -1,9 +1,11 @@
 .PasDiv{
   background-color: var(--bojaPasDiv);
+  transition: background-color 0.2s;
   width: 400px;
   height: 500px;
   border-radius: 35px;
   border: 1px solid var(--bojaOkvira);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .PasDiv img{
   width: 100%;
@@ -75,4 +77,9 @@
   width: 250px;
   clip-path: polygon(0% 0%, 100% 0%, calc(100% - 15px) 50%, 100% 100%, 0% 100%);
 
+}
+@media only screen and (max-width:764px){
+.PasDiv h3{
+  font-size: 18px;
+}
 }
