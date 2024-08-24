@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.svetlaTema{
+    --bojaNavigacije : #f5fafd;
+    --bojaPozadine : #f0f8fc;
+    --bojaSlova : #444444;
+    --bojaSlovaBitno :#222222;
+    --bojaDugmeta : #4F71B5;
+    --bojaNavigacijeObrnuto : #222222;
+    --bojaSenke : rgba(149, 157, 165, 0.2);
+    --bojaPasDiv  : #EBF2F7;
+    --bojaOkvira : #85898C;
+}
+.tamnaTema{
+  --bojaNavigacije : #181919;
+  --bojaPozadine : #181819;
+  --bojaSlova : #EBEBEB;
+  --bojaSlovaBitno :#EEEEEE;
+  --bojaDugmeta : #4F71B5;
+  --bojaNavigacijeObrnuto : #E6E6E6;
+  --bojaSenke : rgba(86, 78, 70, 0.2);
+  --bojaPasDiv  : #161616;
+  --bojaOkvira : #080808;
+}
+body{
+  background-color: var(--bojaPozadine);
+}
+.NavDiv{
+  margin: 15px auto;
+  width: calc(100% - 60px);
+  height: 100px;
+  background-color: var(--bojaNavigacije);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: var(--bojaSenke) 0px 8px 24px;
+}
+.NavLink{
+  text-decoration: none;
+  color: var(--bojaSlova);
+  margin-right: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.NavLogo{
+  width: 82px;
+  height: 70px;
+  margin: 0 50px;
+}
+.NavDugme{
+  width: 120px;
+  height: 60px;
+  margin-left: auto;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  background-color: var(--bojaDugmeta);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.TemaDiv{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bojaNavigacije);
+  fill: var(--bojaNavigacijeObrnuto);
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1;
+}
+.TemaDiv:hover{
+  background-color: var(--bojaNavigacijeObrnuto);
+  fill: var(--bojaNavigacije);
+}
+.TemaDiv svg{
+  width: 40px;
+  height: 40px;
+}
+.FooterDiv{
+  margin: 15px 30px;
+  width: calc(100% - 60px);
+  height: 150px;
+  background-color: var(--bojaNavigacije);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.FooterLogoContainer{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.SocialContainer{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SocialText{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--bojaNavigacijeObrnuto);
+}
+.SocialDivContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.SocialDiv{
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  fill: var(--bojaNavigacijeObrnuto);
+  cursor: pointer;
+}
+.FooterLogo{
+  width: 282px;
+  height: 80px;
+  margin: 0 20px;
+}
+.TeloContainer{
+  width: calc(100% - 140px);
+  margin: 0 auto;
+}
+.ProfilImg{
+  clip-path: circle(50%);
+  height: 48px;
+  width: 48px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: none;
+}
+.KorisnickoIme{
+  margin-left: auto;
+  font-family: sans-serif;
+  font-size: 12px;
+  display: none;
+}
+.KorisnickoIme h1{
+  color: var(--bojaSlovaBitno);
+}
+.KorisnickoIme h2{
+  float: right;
+  color: var(--bojaSlova);
+  cursor: pointer;
+}
+.KorisnickoIme h2:hover{
+  color: #888888;
+}
+#InteresantnaCinjenica{
+  margin: 32px 0;
+  font-weight: normal;
+  color: var(--bojaSlova);
+  font-size: 22px;
+  text-align: center;
+}
